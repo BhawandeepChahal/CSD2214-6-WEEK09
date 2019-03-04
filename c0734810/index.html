@@ -4,9 +4,52 @@
     <meta charset="utf-8" />
     <title>c0734810</title>
     <link href="css/default.css" rel="stylesheet" />
+
+    <script >
+
+       /* let i;
+        let sum = 0;
+        function sum()
+        {
+            
+            for (i = 1109; i >= 119; i = i - 11)
+            {
+                sum = sum + i;
+                document.write("<br> " + i);
+            }
+            
+            return sum;
+        }
+        
+        document.write("<br> <br>sum is---->" + sum());*/
+
+        var s1 = {
+            sum: 0,
+            startnumber: 1109,
+            stepdown: 11,
+            stopnumber: 119,
+            sum: function ()
+            {
+
+
+                for ( i = this.startnumber; i >= this.stopnumber; i = i - this.stepdown)
+                {
+                    this.sum  += i;
+                    //document.write("<br> " + i);
+                }
+
+                return this.sum;
+            }
+        };
+        document.write(s1.sum());
+
+
+
+
+    </script>
 </head>
 <body>
-    <div>Content goes here!</div>
-    <script src="js/main.js"></script>
+  
+    
 </body>
 </html>
